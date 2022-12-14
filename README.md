@@ -30,8 +30,13 @@ tqdm>=4.41.0
        git clone https://github.com/fliessen/EDDSN-MRT/     
        cd EDDSN-MRT/  
 
-2. Train a network
+2. Train a network.
+
        python train.py --weights weights/yolov5s.pt  --cfg models/EDDN_small.yaml  --data data/mydata.yaml --epoch 50 --batch-size 4   --device 0
+       
+3. Detect target.
+
+       python detect.py --weights xxxxxxxx/best.pt --img 640 --source xxxxxxxx.png
 
 
 
